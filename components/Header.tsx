@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { MagnifyingGlassIcon, UserCircleIcon } from '@heroicons/react/24/solid';
-import Avatar from 'react-avatar';
+// import Avatar from 'react-avatar';
 import { useBoardStore } from '@/store/BoardStore';
 import { useEffect, useState } from 'react';
 import fetchSuggestion from '@/lib/fetchSuggestion';
@@ -52,27 +52,29 @@ export default function Header() {
 						<MagnifyingGlassIcon className='w-6 h-6 text-gray-400' />
 						<input
 							type='text'
-							placeholder='Search'
+							placeholder='검색'
 							value={searchString}
 							onChange={(e) => setSearchString(e.target.value)}
 							className='flex-1 p-2 outline-none'
 						/>
 						<button type='submit' hidden>
-							Search
+							검색
 						</button>
 					</form>
 
 					{/* Avartar */}
-					<Avatar name='Soomyung Kang' round color='#0071B3' size='50' />
+					{/* <Avatar name='Soomyung Kang' round color='#0071B3' size='50' /> */}
 				</div>
 			</div>
 
 			<div className='flex items-center justify-center px-5 py-2 md:py-5'>
-				<p className='flex items-center text-sm font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic max-w-3xl text-[#0071B3] p-5'>
+				<p className='flex items-center text-md font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic max-w-3xl text-[#0071B3] p-5 max-sm:flex-col'>
 					<UserCircleIcon
 						className={`inline-block w-10 h-10 text-[#0071B3] mr-1 ${loading && 'animate-spin'}`}
 					/>
-					{suggestion && !loading ? suggestion : 'GPT is summarising your tasks for the day ...'}
+					<span>
+						{suggestion && !loading ? suggestion : 'GPT 가 생성된 일정을 요약하는 중입니다 ...'}
+					</span>
 				</p>
 			</div>
 		</header>

@@ -69,7 +69,7 @@ export default function Modal() {
 						>
 							<Dialog.Panel className='w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all'>
 								<Dialog.Title as='h3' className='text-lg font-medium leading-6 text-gray-900 pb-2'>
-									Add a Task
+									새로운 일정 추가
 								</Dialog.Title>
 
 								<div className='mt-2'>
@@ -77,7 +77,7 @@ export default function Modal() {
 										type='text'
 										value={newTaskInput}
 										onChange={(e) => setNewTaskInput(e.target.value)}
-										placeholder='Enter a task here...'
+										placeholder='일정 입력'
 										className='w-full border border-gray-300 rounded-md outline-none p-5'
 									/>
 								</div>
@@ -91,7 +91,7 @@ export default function Modal() {
 										className='w-full border border-gray-300 rounded-md outline-none p-5 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2'
 									>
 										<PhotoIcon className='h-6 w-6 mr-2 inline-block' />
-										Upload Image
+										이미지 업로드
 									</button>
 
 									{/* image preview */}
@@ -114,18 +114,17 @@ export default function Modal() {
 											// check e is an image
 											if (!e.target.files![0].type.startsWith('image/')) return;
 											setImage(e.target.files![0]);
-											console.log('hiiiii', image);
 										}}
 									/>
 								</div>
 
-								<div className='mt-2'>
+								<div className='mt-5 w-full'>
 									<button
 										type='submit'
 										disabled={!newTaskInput}
-										className='inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'
+										className='flex w-full justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'
 									>
-										Add Task
+										새로운 일정 추가
 									</button>
 								</div>
 							</Dialog.Panel>

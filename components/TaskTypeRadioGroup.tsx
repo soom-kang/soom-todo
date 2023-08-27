@@ -4,17 +4,17 @@ import { RadioGroup } from '@headlessui/react';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const types = [
-	{ id: 'todo', name: 'todo', description: 'A new task to be completed', color: 'bg-red-500' },
+	{ id: 'todo', name: '해야할 일', description: '해야되는 일정 생성', color: 'bg-red-500' },
 	{
 		id: 'inprogress',
-		name: 'In Progress',
-		description: 'A task that is currently being worked on',
+		name: '하는 중',
+		description: '지금 하고있는 일정',
 		color: 'bg-yellow-500',
 	},
 	{
 		id: 'done',
-		name: 'Done',
-		description: 'A task that has been completed',
+		name: '완료',
+		description: '완료된 일정',
 		color: 'bg-green-500',
 	},
 ];

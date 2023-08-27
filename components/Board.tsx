@@ -35,10 +35,17 @@ export default function Board() {
 			});
 		}
 
-		//  This step is needed as the indexes are stopped as numbers  0,1,2 etc. instead of id's with DND library
+		// 인덱스 체크 부분. 보드 이동은 인스턴스하게 가능하지만 저장 X
+		// 보드안 태스크 이동은 DB에 저장
+		// 인덱스는  DND 라이브러리 ID 를 사용하지 않고 숫자로 이용 (0,1,2)
 		const columns = Array.from(board.columns);
+
+		if (source.droppableId === 'board') return;
+
 		const startColIndex = columns[Number(source.droppableId)];
 		const finishColIndex = columns[Number(destination.droppableId)];
+
+		// console.log('board check', columns, source);
 
 		const startCol: Column = {
 			id: startColIndex[0],
@@ -57,6 +64,10 @@ export default function Board() {
 		const newTodos = startCol.todos;
 		const [todoMoved] = newTodos.splice(source.index, 1);
 
+		console.log('start', startCol);
+
+		console.log('hello', newTodos, todoMoved);
+
 		if (startCol.id === finishCol.id) {
 			// Same Column task drag
 			newTodos.splice(destination.index, 0, todoMoved);
@@ -67,6 +78,7 @@ export default function Board() {
 			const newColumns = new Map(board.columns);
 			newColumns.set(startCol.id, newCol);
 
+			updateTodoInDB(todoMoved, finishCol.id);
 			setBoardState({ ...board, columns: newColumns });
 		} else {
 			// dragging to another column
@@ -104,6 +116,8 @@ export default function Board() {
 						{Array.from(board.columns.entries()).map(([id, column], index) => (
 							<Column key={id} id={id} todos={column.todos} index={index} />
 						))}
+
+						{provided.placeholder}
 					</div>
 				)}
 			</Droppable>

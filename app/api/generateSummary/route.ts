@@ -14,13 +14,13 @@ export async function POST(request: Request) {
 			messages: [
 				{
 					role: 'system',
-					content: `When responding, welcome the user always as Mr.Soom and say welcome to the SOOM-TODO App! Limit the response to 200 characters`,
+					content: `When responding, welcome the user always as "방문자 님" and say welcome to the "SOOM TODO" App! Limit the response to 200 characters`,
 				},
 				{
 					role: 'user',
-					content: `Hi there, provide a summary of the following todos. Count how many todos are in each category such as To do, In Progress and Done, then tell the user to have a productive day! Here's the data: ${JSON.stringify(
+					content: `Hi there, provide a summary of the following todos. Count how many todos are in each category such as todo(해야할 일), inprogress(하는 중) and done(완료), then tell the user to have a great day! Here's the data: ${JSON.stringify(
 						todos
-					)}`,
+					)}. Plus, translated in Korean`,
 				},
 			],
 		})
