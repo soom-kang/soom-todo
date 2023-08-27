@@ -6,11 +6,9 @@ import Avatar from 'react-avatar';
 import { useBoardStore } from '@/store/BoardStore';
 import { useEffect, useState } from 'react';
 import fetchSuggestion from '@/lib/fetchSuggestion';
+import LOGO_IMAGE from '@/assets/soom_todo_logo.png';
 
 export default function Header() {
-	const LOGO_IMAGE =
-		'https://private-user-images.githubusercontent.com/4216651/262282213-643bfbba-d6e8-46e5-bffd-89dd64d75b5b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTI2OTI0OTIsIm5iZiI6MTY5MjY5MjE5MiwicGF0aCI6Ii80MjE2NjUxLzI2MjI4MjIxMy02NDNiZmJiYS1kNmU4LTQ2ZTUtYmZmZC04OWRkNjRkNzViNWIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDgyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA4MjJUMDgxNjMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDQxMDNhNjg5NjU2NzA0OTZkMTk1ZWIyMjg2NDdkNzc3MTU0Njk0MzU2NTk1Y2MzNTBhMzI3ZTI0YWQwOThjNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.1ol04fhWwPUSeLD1-98rI1v355aQGII8taFYUeJeZR0';
-
 	const [board, searchString, setSearchString] = useBoardStore((state) => [
 		state.board,
 		state.searchString,
