@@ -44,7 +44,7 @@ export default function TodoCard({
 
 	return (
 		<div
-			className='space-y-2 bg-white rounded-md drop-shadow-md'
+			className='bg-white space-y-2 rounded-md drop-shadow-md'
 			{...draggableProps}
 			{...dragHandleProps}
 			ref={innerRef}
@@ -61,14 +61,14 @@ export default function TodoCard({
 
 			{/* add image here... */}
 			{imageUrl && (
-				<div className='relative h-full w-full rounded-b-md'>
+				<div className='relative w-full h-full rounded-b-md'>
 					<Image
 						src={imageUrl}
 						alt='Task Image'
 						width={400}
 						height={200}
 						priority
-						className='w-full object-contain rounded-b-md'
+						className='object-contain w-full rounded-b-md'
 					/>
 				</div>
 			)}

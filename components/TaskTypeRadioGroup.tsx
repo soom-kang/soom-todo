@@ -26,7 +26,7 @@ export default function TaskTypeRadioGroup() {
 	]);
 	return (
 		<div className='w-full py-5'>
-			<div className='mx-auto w-full max-w-md'>
+			<div className='w-full max-w-md mx-auto'>
 				<RadioGroup value={newTaskType} onChange={(e) => setNewTaskType(e)}>
 					<div className='space-y-2'>
 						{types.map((type) => (
@@ -46,7 +46,7 @@ export default function TaskTypeRadioGroup() {
 							>
 								{({ active, checked }) => (
 									<>
-										<div className='flex w-full items-center justify-between'>
+										<div className='flex items-center justify-between w-full'>
 											<div className='flex items-center'>
 												<div className='text-sm'>
 													<RadioGroup.Label
@@ -65,8 +65,8 @@ export default function TaskTypeRadioGroup() {
 											</div>
 
 											{checked && (
-												<div className='shrink-0 text-white'>
-													<CheckCircleIcon className='h-6 w-6' />
+												<div className='text-white shrink-0'>
+													<CheckCircleIcon className='w-6 h-6' />
 												</div>
 											)}
 										</div>

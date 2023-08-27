@@ -57,7 +57,7 @@ export default function Modal() {
           to the contents.
         */}
 				<div className='fixed inset-0 overflow-y-auto'>
-					<div className='flex min-h-full items-center justify-center p-4 text-center'>
+					<div className='flex items-center justify-center min-h-full p-4 text-center'>
 						<Transition.Child
 							as={Fragment}
 							enter='ease-out duration-300'
@@ -67,8 +67,8 @@ export default function Modal() {
 							leaveFrom='opacity-100 scale-100'
 							leaveTo='opacity-0 scale-95'
 						>
-							<Dialog.Panel className='w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all'>
-								<Dialog.Title as='h3' className='text-lg font-medium leading-6 text-gray-900 pb-2'>
+							<Dialog.Panel className='w-full max-w-md p-6 overflow-hidden text-left align-middle bg-white shadow-xl transform rounded-2xl transition-all'>
+								<Dialog.Title as='h3' className='pb-2 text-lg font-medium text-gray-900 leading-6'>
 									새로운 일정 추가
 								</Dialog.Title>
 
@@ -78,7 +78,7 @@ export default function Modal() {
 										value={newTaskInput}
 										onChange={(e) => setNewTaskInput(e.target.value)}
 										placeholder='일정 입력'
-										className='w-full border border-gray-300 rounded-md outline-none p-5'
+										className='w-full p-5 border border-gray-300 outline-none rounded-md'
 									/>
 								</div>
 
@@ -88,9 +88,9 @@ export default function Modal() {
 									<button
 										type='button'
 										onClick={() => imagePickerRef.current?.click()}
-										className='w-full border border-gray-300 rounded-md outline-none p-5 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2'
+										className='w-full p-5 border border-gray-300 outline-none rounded-md focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2'
 									>
-										<PhotoIcon className='h-6 w-6 mr-2 inline-block' />
+										<PhotoIcon className='inline-block w-6 h-6 mr-2' />
 										이미지 업로드
 									</button>
 
@@ -101,7 +101,7 @@ export default function Modal() {
 											alt='Uploaded Image'
 											width={200}
 											height={200}
-											className='w-full h-44 object-cover mt-2 filter hover:grayscale transition-all duration-150 cursor-not-allowed'
+											className='object-cover w-full mt-2 cursor-not-allowed h-44 filter hover:grayscale transition-all duration-150'
 											onClick={() => setImage(null)}
 										/>
 									)}
@@ -118,11 +118,11 @@ export default function Modal() {
 									/>
 								</div>
 
-								<div className='mt-5 w-full'>
+								<div className='w-full mt-5'>
 									<button
 										type='submit'
 										disabled={!newTaskInput}
-										className='flex w-full justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'
+										className='flex justify-center w-full px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'
 									>
 										새로운 일정 추가
 									</button>
