@@ -22,7 +22,7 @@ export const getTodosGroupedByColumn = async () => {
 			title: todo.title,
 			status: todo.status,
 			// get the image if it exists  on the todo
-			...(todo.image && { image: todo.image }),
+			...(todo.image && { image: JSON.parse(todo.image) }),
 		});
 
 		return acc;
