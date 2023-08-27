@@ -64,10 +64,6 @@ export default function Board() {
 		const newTodos = startCol.todos;
 		const [todoMoved] = newTodos.splice(source.index, 1);
 
-		console.log('start', startCol);
-
-		console.log('hello', newTodos, todoMoved);
-
 		if (startCol.id === finishCol.id) {
 			// Same Column task drag
 			newTodos.splice(destination.index, 0, todoMoved);
