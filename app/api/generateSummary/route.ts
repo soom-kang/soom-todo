@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 					role: 'user',
 					content: `Hi there, provide a summary of the following todos. Count how many todos are in each category such as todo(해야할 일), inprogress(하는 중) and done(완료), then tell the user to have a great day! Here's the data: ${JSON.stringify(
 						todos
-					)}. Plus, translated in Korean`,
+					)}. In the end, translated in Korean.`,
 				},
 			],
 		})
