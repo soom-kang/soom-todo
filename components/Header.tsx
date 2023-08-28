@@ -32,7 +32,7 @@ export default function Header() {
 	}, [board]);
 
 	return (
-		<header className=''>
+		<header>
 			<div className='flex flex-col items-center p-5 mx-auto md:flex-row bg-gray-500/10 rounded-b-2xl max-w-7xl'>
 				{/* bg gradient div */}
 				<div className='absolute top-0 left-0 w-full h-96 bg-gradient-to-br from-pink-400 to-[#0071B3] rounded-md filter blur-3xl opacity-50 -z-50' />

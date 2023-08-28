@@ -39,7 +39,7 @@ export default function Column({ id, todos, index }: Props) {
 							<div
 								{...provided.droppableProps}
 								ref={provided.innerRef}
-								className={`p-2 rounded-2xl shadow-sm ${
+								className={`p-2 rounded-2xl shadow-sm min-w-[200px] ${
 									snapshot.isDraggingOver ? 'bg-green-200' : 'bg-white/50'
 								}`}
 							>
