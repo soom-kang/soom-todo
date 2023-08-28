@@ -3,7 +3,7 @@ import LOGO_IMAGE from '@/assets/soom_todo_logo.png';
 
 export default function Footer() {
 	return (
-		<footer className='max-xl:px-5'>
+		<footer>
 			<div className='flex flex-col items-center justify-center p-5 mx-auto md:flex-row bg-gray-500/10 rounded-t-2xl max-w-7xl'>
 				<div className='fixed left-0 bottom-0 w-full h-96 bg-gradient-to-br to-pink-400 from-[#0071B3] rounded-md filter blur-3xl opacity-50 -z-50' />
 

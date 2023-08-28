@@ -494,10 +494,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.17.11", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.11-a3c0804a82-c31d9f4a6f.zip/node_modules/@types/node/",\
+        ["npm:18.17.12", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.12-b09ca14003-79f8bcca30.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.17.11"]\
+            ["@types/node", "npm:18.17.12"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -508,10 +508,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:20.5.6", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.5.6-f7a7eed369-d2ce44f1cf.zip/node_modules/@types/node/",\
+        ["npm:20.5.7", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.5.7-b5e80f1922-fc284c8e16.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.5.6"]\
+            ["@types/node", "npm:20.5.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -521,7 +521,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-fetch-npm-2.6.4-3e5a54c325-f3e1d881bb.zip/node_modules/@types/node-fetch/",\
           "packageDependencies": [\
             ["@types/node-fetch", "npm:2.6.4"],\
-            ["@types/node", "npm:20.5.6"],\
+            ["@types/node", "npm:20.5.7"],\
             ["form-data", "npm:3.0.1"]\
           ],\
           "linkType": "HARD"\
@@ -3977,7 +3977,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/openai-npm-4.3.0-35a8e61260-b17df8c247.zip/node_modules/openai/",\
           "packageDependencies": [\
             ["openai", "npm:4.3.0"],\
-            ["@types/node", "npm:18.17.11"],\
+            ["@types/node", "npm:18.17.12"],\
             ["@types/node-fetch", "npm:2.6.4"],\
             ["abort-controller", "npm:3.0.0"],\
             ["agentkeepalive", "npm:4.5.0"],\
