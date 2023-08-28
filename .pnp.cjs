@@ -45,7 +45,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.28"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
-            ["react-avatar", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:5.0.3"],\
             ["react-beautiful-dnd", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:13.1.1"],\
             ["react-dom", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:18.2.0"],\
             ["tailwindcss", "npm:3.3.3"],\
@@ -3054,15 +3053,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["is-retina", [\
-        ["npm:1.0.3", {\
-          "packageLocation": "./.yarn/cache/is-retina-npm-1.0.3-1903c20986-a78870de9e.zip/node_modules/is-retina/",\
-          "packageDependencies": [\
-            ["is-retina", "npm:1.0.3"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["is-set", [\
         ["npm:2.0.2", {\
           "packageLocation": "./.yarn/cache/is-set-npm-2.0.2-7e9ba84a8c-b64343faf4.zip/node_modules/is-set/",\
@@ -3720,7 +3710,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.28"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
-            ["react-avatar", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:5.0.3"],\
             ["react-beautiful-dnd", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:13.1.1"],\
             ["react-dom", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:18.2.0"],\
             ["tailwindcss", "npm:3.3.3"],\
@@ -4342,42 +4331,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["react", "npm:18.2.0"],\
             ["loose-envify", "npm:1.4.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["react-avatar", [\
-        ["npm:5.0.3", {\
-          "packageLocation": "./.yarn/cache/react-avatar-npm-5.0.3-2c8db1f8f3-d2da02dd62.zip/node_modules/react-avatar/",\
-          "packageDependencies": [\
-            ["react-avatar", "npm:5.0.3"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:5.0.3", {\
-          "packageLocation": "./.yarn/__virtual__/react-avatar-virtual-b50d984cf4/0/cache/react-avatar-npm-5.0.3-2c8db1f8f3-d2da02dd62.zip/node_modules/react-avatar/",\
-          "packageDependencies": [\
-            ["react-avatar", "virtual:de2906d7c14371dc639db3c00588cf2892d92482053c88a8bc48e2170f527116cc4cae3f5c3e8a12e7ff2dafdede50af6559d26161fc7f8dc598dbc44b7cfb2a#npm:5.0.3"],\
-            ["@babel/runtime", "npm:7.22.11"],\
-            ["@types/babel__runtime", null],\
-            ["@types/core-js-pure", null],\
-            ["@types/prop-types", null],\
-            ["@types/react", "npm:18.2.20"],\
-            ["core-js-pure", "npm:3.32.1"],\
-            ["is-retina", "npm:1.0.3"],\
-            ["md5", "npm:2.3.0"],\
-            ["prop-types", "npm:15.8.1"],\
-            ["react", "npm:18.2.0"]\
-          ],\
-          "packagePeers": [\
-            "@babel/runtime",\
-            "@types/babel__runtime",\
-            "@types/core-js-pure",\
-            "@types/prop-types",\
-            "@types/react",\
-            "core-js-pure",\
-            "prop-types",\
-            "react"\
           ],\
           "linkType": "HARD"\
         }]\

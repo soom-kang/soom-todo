@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { MagnifyingGlassIcon, UserCircleIcon } from '@heroicons/react/24/solid';
-// import Avatar from 'react-avatar';
 import { useBoardStore } from '@/store/BoardStore';
 import { useEffect, useState } from 'react';
 import fetchSuggestion from '@/lib/fetchSuggestion';
@@ -61,9 +60,6 @@ export default function Header() {
 							검색
 						</button>
 					</form>
-
-					{/* Avartar */}
-					{/* <Avatar name='Soomyung Kang' round color='#0071B3' size='50' /> */}
 				</div>
 			</div>
 

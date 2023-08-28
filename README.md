@@ -1,34 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'> 
+  <h1> Soom Todo Board </h1>
 
-## Getting Started
+본 프로젝트에서는 `Next.js 13 App Router`와 `OpenAI`, `Beautiful DND` 을 이용해 간단한 TODO 앱을 만들어보았습니다.
 
-First, run the development server:
+  <p>
+    A comprehensive to-do board application built with modern web technologies.
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<h4 align="center">
+  <a href="https://todo.soom.today">View Demo</a>
+</h4>
+
+### About The Project
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next%2Ejs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Zustand-4D2B1A?style=flat-square&logo=Ameba&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Appwrite-F02E65?style=flat-square&logo=appwrite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Beautiful DND-0052CC?style=flat-square&logo=trello&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Headless UI-66E3FF?style=flat-square&logo=headlessui&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Yarn Berry-2C8EBB?style=flat-square&logo=yarn&logoColor=white"/>
+</p>
+
+---
+
+#### 1. API Endpoints:
+
+- `generateSummary/route.ts`: Handles the route for generating summaries.
+
+#### 2. Styling:
+
+- `globals.css`: Contains global styles for the application.
+
+#### 3. Layout & Pages:
+
+- `layout.tsx`: Defines the main layout structure of the application.
+- `page.tsx`: Represents the main page component.
+
+#### 4. Components:
+
+- `Board.tsx`: Represents the main board where tasks are displayed.
+- `Column.tsx`: Represents individual columns on the board.
+- `Footer.tsx`: Component for the footer section.
+- `Header.tsx`: Component for the header section.
+- `Modal.tsx`: A generic modal component.
+- `TaskTypeRadioGroup.tsx`: A radio group component to select task types.
+- `TodoCard.tsx`: Represents individual to-do cards on the board.
+
+#### 5. Utility Libraries:
+
+- `fetchSuggestion.ts`: Fetches suggestions.
+- `formatTodosForAI.ts`: Formats to-do items for AI processing.
+- `getTodosGroupedByColumn.ts`: Groups to-do items by their respective columns.
+- `getUrl.ts`: Utility to get URLs.
+- `uploadImage.ts`: Handles image uploads.
+
+#### 6. State Management:
+
+- `BoardStore.ts`: Manages the state of the board.
+- `ModalStore.ts`: Manages the state of modals.
+
+This project provides a structured way to manage and visualize tasks on a board, with various components and utilities to enhance the user experience. The application is modular, with clear separation of concerns, making it scalable and maintainable.
+
+---
+
+### Project Tree
+
+```
+📦 soom-todo-board
+├─ app
+│  ├─ api
+│  │  └─ generateSummary
+│  │     └─ route.ts
+│  ├─ favicon.ico
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  └─ page.tsx
+├─ appwrite.ts
+├─ assets
+│  └─ soom_todo_logo.png
+├─ components
+│  ├─ Board.tsx
+│  ├─ Column.tsx
+│  ├─ Footer.tsx
+│  ├─ Header.tsx
+│  ├─ Modal.tsx
+│  ├─ TaskTypeRadioGroup.tsx
+│  └─ TodoCard.tsx
+├─ lib
+│  ├─ fetchSuggestion.ts
+│  ├─ formatTodosForAI.ts
+│  ├─ getTodosGroupedByColumn.ts
+│  ├─ getUrl.ts
+│  └─ uploadImage.ts
+├─ openai.ts
+├─ store
+│  ├─ BoardStore.ts
+│  └─ ModalStore.ts
+└─ typings.d.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h4 align="center">
+  Developed by SOOM
+</h4>
