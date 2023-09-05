@@ -13,7 +13,7 @@ export default function Footer() {
 					width={300}
 					height={100}
 					priority
-					className='object-contain w-28 md:w-40 md:pb-0'
+					className='object-contain w-20 md:w-24 md:pb-0'
 				/>
 			</div>
 		</footer>

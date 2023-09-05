@@ -1,7 +1,7 @@
 <div align='center'> 
   <h1> Soom Todo Board </h1>
 
-본 프로젝트에서는 `Next.js 13 App Router`와 `OpenAI`, `Beautiful DND` 을 이용해 간단한 TODO 앱을 만들어보았습니다.
+`OpenAI`, `Beautiful DND` 을 이용해 `Next.js 13 App Router` 로 구현한 TODO 앱
 
   <p>
     A comprehensive to-do board application built with modern web technologies.

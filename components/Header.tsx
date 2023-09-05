@@ -42,7 +42,7 @@ export default function Header() {
 					width={300}
 					height={100}
 					priority
-					className='object-contain w-44 md:w-56 md:pb-0'
+					className='object-contain w-28 pb-5 md:w-32 md:pb-0'
 				/>
 
 				<div className='flex items-center justify-end flex-1 w-full space-x-5'>
@@ -66,9 +66,9 @@ export default function Header() {
 			<div className='flex items-center justify-center px-5 py-2 md:py-5'>
 				<p className='flex items-center text-md font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic max-w-3xl text-[#0071B3] p-5 max-sm:flex-col'>
 					<UserCircleIcon
-						className={`inline-block w-10 h-10 text-[#0071B3] mr-1 ${loading && 'animate-spin'}`}
+						className={`inline-block w-10 h-10 text-[#0071B3] md:mr-5 ${loading && 'animate-spin'}`}
 					/>
-					<span>
+					<span className='whitespace-pre-line'>
 						{suggestion && !loading ? suggestion : 'GPT 가 생성된 일정을 요약하는 중입니다 ...'}
 					</span>
 				</p>
