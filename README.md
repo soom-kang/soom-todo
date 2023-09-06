@@ -1,5 +1,5 @@
 <div align='center'> 
-  <h1> Soom Todo Board </h1>
+  <h1> Soom Todo </h1>
 
 `OpenAI`, `Beautiful DND` 을 이용해 `Next.js 13 App Router` 로 구현한 TODO 앱
 
