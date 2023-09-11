@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  soom-todo:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args:
+        - nodeVersion=${NODE_VERSION}
+        - devPort=${DEV_PORT}
+        - author=${AUTHOR}
+    container_name: soom-todo_c
+    ports:
+      - ${DEV_PORT}:${DEV_PORT}
+    volumes:
+      - ../app:/app_dev/app
+      - ../assets:/app_dev/assets
+      - ../components:/app_dev/components
+      - ../lib:/app_dev/lib
+      - ../store:/app_dev/store
+    stdin_open: true
+    tty: true
+
+volumes:
+  soom_project_v:
